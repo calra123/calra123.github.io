@@ -1,0 +1,41 @@
+html{
+	
+}
+body{
+
+
+	
+	font-family: 'Inconsolata', monospace;
+
+	text-align: center;
+
+	background-image: url("images/bgImg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+	background-position: center; 
+	
+
+	
+	
+	
+	
+}
+
+
+
+
+.btn-info{
+	background-color: black;
+	color:white;
+	border-radius: 50px;
+	position: relative;
+	margin-top: 200px;
+
+}
+
+.btn-info:hover{
+	background-color: #123456;
+	padding: 5px 5px;
+}
