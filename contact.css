@@ -1,0 +1,88 @@
+body{
+	font-family:'Inconsolata', monospace;
+	
+	background: url("contactbg.jpg");
+	background-size: cover;
+	
+	
+	
+}
+
+
+.sticky{
+	position: fixed;
+	top: 0;
+	width: 98%;
+}
+.navitems{
+	display: flex;
+	margin-top: 0;
+	padding-right: 100px;
+	width: 100%;
+	color:blue;
+	font-size: 2em;
+	background-color: white;
+	
+}
+.main-nav{
+	color:blue;
+}
+@media only screen and (max-width: 600px){
+	.navitems{
+		font-size: 0.9em;
+	}
+
+	.contact{
+		width: 90%;
+	}
+}
+
+
+li{
+	
+	list-style: none;
+	padding: 20px;
+	margin-left: 0px;
+
+}
+
+.contact{
+	display: flex;
+	margin-left: auto;
+}
+
+
+a{
+	
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+	color: blue;
+}
+.container{
+
+	color: white;
+	width: 600px;
+	margin: 80px auto;
+	background-color: #123456;
+	padding: 80px;
+	text-align: center;
+	border-radius: 500px;
+	border:2px solid white;
+	
+}
+
+li{
+	text-align: left;
+
+}
+
+span{
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+a{
+	color:#eef;
+}

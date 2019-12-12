@@ -1,29 +1,112 @@
 html{
+
+	
 	
 }
 body{
 
-
+	margin:0 0 0 0;
 	
 	font-family: 'Inconsolata', monospace;
-
 	text-align: center;
 
-	background-image: url("images/bgImg.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-
-	background-position: center; 
-	
-
-	
-	
-	
 	
 }
 
 
+/*NAV*/
+.sticky{
+	position: fixed;
+	top: 0;
+	width: 98%;
+}
+.navitems{
+	display: flex;
+	margin-top: 0;
+	padding-right: 100px;
+	width: 100%;
+	
+	font-size: 2em;
+	background-color: white;
+	
+}
+@media only screen and (max-width: 600px){
+	.navitems{
+		font-size: 0.9em;
+
+	}
+	.sticky{
+		width: 90%;
+	}
+}
+
+
+li{
+	
+	list-style: none;
+	
+	padding: 20px;
+	margin-left: 0px;
+
+}
+
+.contact{
+	display: flex;
+	margin-left: auto;
+}
+
+
+a{
+	color:blue;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+	color: blue;
+}
+
+/*COVER*/
+.container{
+
+	margin-top: 80px;
+	background-image: url("images/bgImg.jpg");
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	height: 90vh;
+
+	background-position: center; 
+	text-align: center;
+	
+}
+.btn-info{
+	text-align: center;
+
+}
+.btn-info > .sticky{
+	position: sticky;
+}
+
+.grid{
+	display: grid;
+	grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+	grid-template-rows: 1fr;
+
+}
+img{
+	width: 200px;
+	height: 200px;
+	
+	padding: 120px;
+}
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	font-size: 2rem;
+	padding: 10px;
+}
 
 
 .btn-info{
@@ -32,6 +115,7 @@ body{
 	border-radius: 50px;
 	position: relative;
 	margin-top: 200px;
+	position: sticky;
 
 }
 
@@ -39,3 +123,15 @@ body{
 	background-color: #123456;
 	padding: 5px 5px;
 }
+
+.about{
+	
+	font-size: 1.2rem;
+	text-align: left;
+	padding: 10px;
+	line-height: 30px;
+	background-color: #eee;
+	width: 600px;
+	margin: 0 auto;
+}
+

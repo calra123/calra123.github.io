@@ -1,0 +1,250 @@
+body{
+	font-family: Arial;
+}
+span{
+	
+	border:2px solid pink;
+	background-color: pink;
+	font-size: 1.5em;
+	margin-top: 20px;
+	border-radius: 200px;
+	box-shadow: gray;
+	padding: 20px;
+
+}
+h2{
+	display: flex;
+	justify-content: flex-end;
+	align-content: flex-end;
+	width: 200px;
+	border:2px solid pink;
+	border-radius: 200px;
+	padding:20px;
+	background-color: pink;
+	box-shadow: gray;	
+}
+
+h2 .nodance{
+	width: 200px;
+	border:2px solid pink;
+	background-color: pink;
+	box-shadow: gray;	
+}
+
+.dance{
+	width:100%;
+	display: flex;
+	justify-content: center;
+}
+
+
+.upper{
+	
+	background-color: #DA3777;
+	height: 300px;
+	width: 200px;
+	border:yellow;
+	border-radius: 300px 300px;
+	margin: 10px auto;
+	z-index: 2;
+
+}
+.lefteye, .righteye{
+	height: 20px;
+	width: 20px;
+	border-radius: 15px;
+	background-color: black;
+}
+.lefteye{
+	position: relative;
+	left:60px;
+	top: 20px;
+}
+
+.righteye{
+	position: relative;
+	left: 90px;
+	top: 0px;
+}
+.mouth{
+	position: relative;
+	top: 15px;
+	left: 50px;
+	height: 45px;
+	width: 45px;
+	bottom: 10px;
+	border-radius: 0px 0px 200px 200px;
+	background-color: black;
+}
+
+.lefthand, .righthand{
+margin: 0 auto;
+height: 100px;
+width: 50px;
+border-radius: 0px 0px 50px 50px;
+background-color: black;
+}
+.lefthand{
+	position: relative;
+	top: 40px;
+	left: 40px;
+
+}
+.righthand{
+	position: relative;
+	left: -75px;
+	top: -60px;
+	transform-origin: 0 0%;
+
+
+	
+}
+
+.righthand:hover {
+
+	transition-duration: 1s;
+
+	
+	-webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+
+
+}
+
+
+.leftleg, .rightleg{
+margin: 0 auto;
+height: 100px;
+width: 50px;
+border-radius: 0px 0px 50px 50px;
+background-color: black;
+}
+
+.leftleg{
+	position: relative;
+	top: -30px;
+	left: 30px;
+}
+
+.rightleg{
+	height: 110px;
+	position: relative;
+	top: -140px;
+	left: -45px;
+	z-index: -1;
+}
+
+.leftleg:hover{
+
+	transition-duration: 1s;
+	-webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+
+}
+
+.dance:hover ~ .lower .leftleg{
+
+	transition-duration: 0.5s;
+	-webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+
+}
+.dance:hover ~ .upper .righthand{
+
+	transition-duration: 0.5s;
+	-webkit-transform: rotate(-120deg);
+    -moz-transform: rotate(-120deg);
+    -o-transform: rotate(-120deg);
+    -ms-transform: rotate(-120deg);
+    transform: rotate(-120deg);
+
+
+}
+
+.dance:hover ~ .upper .lefthand{
+
+	transition-duration: 0.5s;
+	-webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    transform: rotate(120deg);
+
+
+}
+
+.dance:hover ~ .upper .mouth{
+	transition-duration: 1s;
+	transform: scale(0.5);
+
+}
+
+.dance:hover ~ .upper .eyes{
+	transition-duration: 1s;
+	transform: scale(0.5);
+
+}
+
+.nodance:hover ~ .lower .leftleg{
+
+	transition-duration: 0.5s;
+	-webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+
+}
+.nodance:hover ~ .upper .righthand{
+
+	transition-duration: 0.5s;
+	-webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    transform: rotate(120deg);
+    transform: skewX(30deg);
+
+
+}
+
+.nodance:hover ~ .upper .lefthand{
+
+	transition-duration: 0.5s;
+	-webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    transform: rotate(120deg);
+    transform: skewX(-30deg);
+
+
+}
+
+.nodance:hover ~ .upper .mouth{
+	transition-duration: 1s;
+	transform: skewX(30deg);
+	transform: scale(0.5);
+
+}
+
+.nodance:hover ~ .upper .eyes{
+	transition-duration: 1s;
+	transform: scaleX(1.5);
+
+}
+
+.nodance:hover ~ .upper {
+	background-color: #ff3777;
+	
+}
+

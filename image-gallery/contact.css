@@ -1,0 +1,14 @@
+body{
+	font-family: 'Inconsolata', monospace;
+	background-color: #a03755;
+	text-align: center;
+	padding: 10px;
+}
+
+.container{
+
+	width: 600px;
+	margin: 0 auto;
+	background-color: #e79cb1;
+	
+}
